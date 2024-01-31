@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #total {
+            border: 2px solid black;
+            text-align: center;
+            width: auto;
+            width: 500px;
+            margin-left: 400px;
+            display: grid;
+            height: 500px;
+        }
+
+        #input {
+            margin-top: 10px;
+            grid-template-columns: repeat(1, auto);
+            display: grid;
+            color: red;
+
+        }
+
+        #number {
+            display: grid;
+            margin-top: 10px;
+            grid-template-columns: repeat(3, auto);
+
+        }
+
+        #operators {
+            margin-top: 10px;
+            grid-template-columns: repeat(4, auto);
+            display: grid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="total">
+        <div id="input">
+            1st Number:- <input type="text" id="first" readonly placeholder="1st number">
+            2nd Number:-<input type="text" id="second" readonly placeholder="2nd number">
+            Result:-<input type="text" id="result" readonly placeholder="Result">
+        </div>
+        <div id="number">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+        </div>
+
+        <div id="operators">
+            <button id="add">add</button>
+            <button id="subs">subtract</button>
+            <button id="div"> Divide</button>
+            <button id="multiply">multiply</button>
+
+        </div>
+        <button id="second_number">click here to enter second number</button>
+        <button id="clear">Clear All</button>
+
+    </div>
+
+</body>
+
+</html>
